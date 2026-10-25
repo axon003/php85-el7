@@ -1,0 +1,8 @@
+# EXEMPLU - PHP 8.5 mod_php pentru httpd24-el7 (/opt/httpd24, httpd 2.4.69).
+# NU poate fi incarcat in acelasi httpd cu mod_php5/mod_php7 (un singur modul PHP per proces).
+# Foloseste o instanta httpd separata sau inlocuieste modulul vechi. Necesita MPM prefork.
+LoadModule php_module /opt/httpd24/modules/libphp85.so
+<FilesMatch \.php$>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+DirectoryIndex index.php index.html

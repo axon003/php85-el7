@@ -1,0 +1,6 @@
+[php85-el7]
+name=PHP 8.5 and Apache 2.4 for EL7
+baseurl=https://axon003.github.io/php85-el7/el7/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=https://axon003.github.io/php85-el7/RPM-GPG-KEY-php85-el7
